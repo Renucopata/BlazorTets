@@ -1,0 +1,19 @@
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.layout-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered; /* Set your desired background color */
+}
+
+.content-container {
+    max-width: 960px; /* Adjust the max-width as per your requirements */
+    padding: 20px;
+    margin: 0 auto;
+}

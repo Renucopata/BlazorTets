@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\BlazorApp1.bundle.scp.css"
     },
     {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\LogoTrans.png",
+      "PackagePath": "staticwebassets\\LogoTrans.png"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\PCLoginBackground.jpg",
+      "PackagePath": "staticwebassets\\PCLoginBackground.jpg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\LoginStyles.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyles.css"
+    },
+    {
       "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },

@@ -1,3 +1,23 @@
+/* _content/BlazorApp1/Shared/LoginLayout.razor.rz.scp.css */
+ html[b-mm3f2k0bxq], body[b-mm3f2k0bxq] {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.layout-container[b-mm3f2k0bxq] {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered; /* Set your desired background color */
+}
+
+.content-container[b-mm3f2k0bxq] {
+    max-width: 960px; /* Adjust the max-width as per your requirements */
+    padding: 20px;
+    margin: 0 auto;
+}
 /* _content/BlazorApp1/Shared/MainLayout.razor.rz.scp.css */
 .page[b-45rkf8v3vv] {
     position: relative;
