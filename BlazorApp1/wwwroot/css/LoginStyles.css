@@ -39,3 +39,44 @@
         width: 300px; 
         height: auto;
     }
+
+.login-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+    .form-field label {
+        margin-bottom: 5px;
+    }
+
+    .form-field input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

@@ -5,14 +5,6 @@
       "PackagePath": "staticwebassets\\BlazorApp1.bundle.scp.css"
     },
     {
-      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\LogoTrans.png",
-      "PackagePath": "staticwebassets\\LogoTrans.png"
-    },
-    {
-      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\PCLoginBackground.jpg",
-      "PackagePath": "staticwebassets\\PCLoginBackground.jpg"
-    },
-    {
       "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\LoginStyles.css",
       "PackagePath": "staticwebassets\\css\\LoginStyles.css"
     },
@@ -23,6 +15,10 @@
     {
       "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
       "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
@@ -65,8 +61,484 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
       "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\UFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\UFL.txt"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Bold.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Italic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Light.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Medium.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\fonts\\ubuntu\\Ubuntu-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Regular.ttf"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\images\\LogoTrans.png",
+      "PackagePath": "staticwebassets\\images\\LogoTrans.png"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\images\\PCLoginBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\PCLoginBackground.jpg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-01.jpg"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "D:\\BlazorApp1\\BlazorApp1\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props",

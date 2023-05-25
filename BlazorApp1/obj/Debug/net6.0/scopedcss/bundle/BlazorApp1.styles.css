@@ -1,6 +1,7 @@
 /* _content/BlazorApp1/Shared/LoginLayout.razor.rz.scp.css */
- html[b-mm3f2k0bxq], body[b-mm3f2k0bxq] {
+html[b-mm3f2k0bxq], body[b-mm3f2k0bxq] {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -10,13 +11,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: orangered; /* Set your desired background color */
+    background-color: orangered; 
 }
 
 .content-container[b-mm3f2k0bxq] {
-    max-width: 960px; /* Adjust the max-width as per your requirements */
+ 
+    width: 100%;
     padding: 20px;
     margin: 0 auto;
+
+}
+
+.logoImage[b-mm3f2k0bxq] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: auto;
+    z-index:3
 }
 /* _content/BlazorApp1/Shared/MainLayout.razor.rz.scp.css */
 .page[b-45rkf8v3vv] {
