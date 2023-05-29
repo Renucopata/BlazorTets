@@ -10,4 +10,8 @@
     <None Include="Pages\Login.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="xunit.extensibility.execution" Version="2.4.2" />
+  </ItemGroup>
+
 </Project>

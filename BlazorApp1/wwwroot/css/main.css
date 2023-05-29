@@ -159,8 +159,8 @@ iframe {
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
-	
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
+	background-color: orangered;
 	background-position: center;
 	background-size: cover;
 	position: relative;

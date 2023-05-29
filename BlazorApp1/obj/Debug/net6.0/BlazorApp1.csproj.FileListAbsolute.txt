@@ -31,3 +31,7 @@ D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb
 D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.genruntimeconfig.cache
 D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\ref\BlazorApp1.dll
 D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\scopedcss\Shared\LoginLayout.razor.rz.scp.css
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.abstractions.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.core.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.execution.dotnet.dll
+D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.csproj.CopyComplete
