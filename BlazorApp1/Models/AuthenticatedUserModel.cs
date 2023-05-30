@@ -6,8 +6,8 @@
 		public string Password { get; set;}
 		public string Email { get; set;}
 		public string Nombre { get; set;}
-		public string rol { get; set;}
-		public int idAgenda { get; set;}
+		public string Cargo { get; set;}
+		public int IdAgenda { get; set;}
 		
 	}
 }
