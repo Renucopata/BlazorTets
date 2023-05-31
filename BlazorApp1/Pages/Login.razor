@@ -1,11 +1,9 @@
 ﻿@page "/"
-@using System.IdentityModel.Tokens.Jwt;
-@using Microsoft.IdentityModel.Tokens;
-@using System.Security.Claims;
 
 @layout LoginLayout
 @inject NavigationManager NavManager
 @inject IHttpClientFactory _clientFactory
+
 
 
 
@@ -74,7 +72,7 @@
 
 @code {
 	AuthenticationUserModel user = new();
-	
+
 	ApiConnection connection = new();
 
 
@@ -83,59 +81,72 @@
 	private bool showAuthenticationError = false;
 	private string authenticationErrorText = "";
 
-	public bool isAuthenticated()
+	public async Task<bool> IsAuthenticatedAsync()
 	{
-		user.UserName = 
 		var token = new JwtSecurityTokenHandler();
+
 		string secretKey = connection.get_secretKey();
 		var LlaveTk = Encoding.ASCII.GetBytes(secretKey);
+		var userName = user.UserName;
+		var passrowd = user.Password;
 		var credenciales = new SecurityTokenDescriptor
 			{
-				Subject = new ClaimsIdentity(new Claim[] {
-					new Claim("user",user.UserName),
-					new Claim("pass",user.Password)
+				Subject = new ClaimsIdentity(new Claim[]
+				{
+			new Claim("user",userName),
+			new Claim("pass",passrowd)
 				}),
-				SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(LlaveTk), SecurityAlgorithms.HmacSha256)
+				SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(LlaveTk), SecurityAlgorithms.HmacSha256),
+
 			};
+
+		token.SetDefaultTimesOnTokenCreation = false; //To remove the nbf, exp and iat extra payloads
 		var salidaTk = token.CreateToken(credenciales);
+
+
 		var TK = token.WriteToken(salidaTk);
 
+		var request = new HttpRequestMessage(HttpMethod.Post, connection.get_baseUrl());
 
-
-		/*
-			var API = new RestClient(baseUrl);
-			API.RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
-			API.Timeout = -1;
-			var consulta = new RestRequest(Method.POST);
-			consulta.AddHeader("Content-Type", "application/json");
-			var body = "{\r\n\n    \"token\":\"" + TK + "\"\r\n\n}";
-			consulta.AddParameter("application/json", body, ParameterType.RequestBody);
-			IRestResponse<ModeloUsuario> resp = API.Execute<ModeloUsuario>(consulta);
-			if (!string.IsNullOrEmpty(resp.Content))
-			{
-
-				return true;
-			}
-			else
-			{
-
-				return false;
-			}
-		*/
-
-		return true;
-	}
-
-	protected  async Task ExecuteLogin()
-	{
-		var request = new HttpRequestMessage(HttpMethod.Post, "https://192.168.200.166/api_consultas/api/Login/auth/");
 		var client = _clientFactory.CreateClient();
 
-		HttpResponseMessage response = await client.PostAsync(request);
+		HttpResponseMessage response = await client.SendAsync(request);
 
 		if (response.IsSuccessStatusCode)
 		{
-			
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
+
+
+
+		var API = new RestClient(connection.get_baseUrl());
+
+		var consulta = new RestRequest("", Method.Post);
+		consulta.AddHeader("Content-Type", "application/json");
+		var body = "{\r\n\n    \"token\":\"" + TK + "\"\r\n\n}";
+		consulta.AddParameter("application/json", body, ParameterType.RequestBody);
+		var resp = await API.ExecuteAsync<AuthenticationUserModel>(consulta);
+
+		if (!string.IsNullOrEmpty(resp.Content))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	protected async Task ExecuteLogin()
+	{
+		if (await IsAuthenticatedAsync())
+		{
+			NavManager.NavigateTo("/home");
 		}
 	}
 

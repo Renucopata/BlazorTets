@@ -35,3 +35,13 @@ D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.abstractions.dll
 D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.core.dll
 D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\xunit.execution.dotnet.dll
 D:\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.csproj.CopyComplete
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\RestSharp.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\System.Net.Http.Json.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\System.Text.Json.dll
+D:\BlazorApp1\BlazorApp1\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
