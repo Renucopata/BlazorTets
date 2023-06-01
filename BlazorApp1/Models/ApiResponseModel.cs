@@ -1,7 +1,10 @@
 ﻿namespace BlazorApp1.Models
 {
-	public class AuthenticatedUserModel
+	public class ApiResponseModel
 	{
+
+		//Change the  JsonPropertyName to the exact headers name
+
 		public string UserName { get; set;}
 		public string Password { get; set;}
 		public string Email { get; set;}

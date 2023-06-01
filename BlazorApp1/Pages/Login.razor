@@ -73,16 +73,28 @@
 @code {
 	AuthenticationUserModel user = new();
 
-	ApiConnection connection = new();
+	public static ApiConnection connection = new();
 
 
 
 
 	private bool showAuthenticationError = false;
 	private string authenticationErrorText = "";
+	public string apiUrl = connection.get_baseUrl();  
 
-	public async Task<bool> IsAuthenticatedAsync()
+
+	protected async Task ExecuteLogin()
 	{
+		if (await ApiRequest())
+		{
+			NavManager.NavigateTo("/home");
+		}
+	}
+
+	public string tokenGeneration()
+	{
+
+		//-----Token Generation----
 		var token = new JwtSecurityTokenHandler();
 
 		string secretKey = connection.get_secretKey();
@@ -92,22 +104,43 @@
 		var credenciales = new SecurityTokenDescriptor
 			{
 				Subject = new ClaimsIdentity(new Claim[]
-				{
+						{
 			new Claim("user",userName),
 			new Claim("pass",passrowd)
-				}),
+						}),
 				SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(LlaveTk), SecurityAlgorithms.HmacSha256),
 
 			};
 
 		token.SetDefaultTimesOnTokenCreation = false; //To remove the nbf, exp and iat extra payloads
 		var salidaTk = token.CreateToken(credenciales);
+		return token.WriteToken(salidaTk);
+
+	}
+	//----Token Generation---
 
 
-		var TK = token.WriteToken(salidaTk);
+	//---Api Request----
 
-		var request = new HttpRequestMessage(HttpMethod.Post, connection.get_baseUrl());
+	//Refit way----
+	[Post("https://192.168.200.166/api_consultas/api/Login/auth/")]
+	public async Task <bool> ApiRequest(string token )
+	{
+		
 
+
+		
+	}
+
+		
+
+
+
+
+
+		//HttpClient way
+
+		/*var request = new HttpRequestMessage(HttpMethod.Post, connection.get_baseUrl());
 		var client = _clientFactory.CreateClient();
 
 		HttpResponseMessage response = await client.SendAsync(request);
@@ -119,17 +152,17 @@
 		else
 		{
 			return false;
-		}
+		}*/
 
 
 
-
-		var API = new RestClient(connection.get_baseUrl());
+		//RestSharp way
+		/*var API = new RestClient(connection.get_baseUrl());
 
 		var consulta = new RestRequest("", Method.Post);
 		consulta.AddHeader("Content-Type", "application/json");
 		var body = "{\r\n\n    \"token\":\"" + TK + "\"\r\n\n}";
-		consulta.AddParameter("application/json", body, ParameterType.RequestBody);
+		consulta.AddParameter("application/json", body, RestSharp.ParameterType.RequestBody);
 		var resp = await API.ExecuteAsync<AuthenticationUserModel>(consulta);
 
 		if (!string.IsNullOrEmpty(resp.Content))
@@ -139,16 +172,11 @@
 		else
 		{
 			return false;
-		}
-	}
+		}*/
+	
 
-	protected async Task ExecuteLogin()
-	{
-		if (await IsAuthenticatedAsync())
-		{
-			NavManager.NavigateTo("/home");
-		}
-	}
+
+	
 
 
 
