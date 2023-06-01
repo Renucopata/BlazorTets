@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using System.Net;
+
 
 @layout LoginLayout
 @inject NavigationManager NavManager
@@ -85,13 +87,13 @@
 
 	protected async Task ExecuteLogin()
 	{
-		if (await ApiRequest())
+		if (await ApiRequest(tokenGeneration()))
 		{
 			NavManager.NavigateTo("/home");
 		}
 	}
 
-	public string tokenGeneration()
+	public TokenRequest tokenGeneration()
 	{
 
 		//-----Token Generation----
@@ -114,7 +116,9 @@
 
 		token.SetDefaultTimesOnTokenCreation = false; //To remove the nbf, exp and iat extra payloads
 		var salidaTk = token.CreateToken(credenciales);
-		return token.WriteToken(salidaTk);
+		TokenRequest tokenRequest = new();
+		tokenRequest.Token = token.WriteToken(salidaTk);
+		return tokenRequest;
 
 	}
 	//----Token Generation---
@@ -122,12 +126,32 @@
 
 	//---Api Request----
 
-	//Refit way----
-	[Post("https://192.168.200.166/api_consultas/api/Login/auth/")]
-	public async Task <bool> ApiRequest(string token )
+	//-----Restsharp way----
+
+
+	public async Task <bool> ApiRequest(TokenRequest tokenRequest )
 	{
+
+		HttpClientHandler handler = new HttpClientHandler();
+		handler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+		ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+		ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
+		RestClient _clientRest = new RestClient(handler);
+		RestRequest _requestRest = new RestRequest(connection.get_baseUrl(), Method.Post).AddJsonBody(tokenRequest);
+		RestResponse restRponse = await _clientRest.ExecutePostAsync(_requestRest);
+		var convertedResponse = JsonConvert.SerializeObject(restRponse.Content);
 		
 
+
+
+		if (restRponse.Content == "[]")
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 
 		
 	}
@@ -138,53 +162,6 @@
 
 
 
-		//HttpClient way
-
-		/*var request = new HttpRequestMessage(HttpMethod.Post, connection.get_baseUrl());
-		var client = _clientFactory.CreateClient();
-
-		HttpResponseMessage response = await client.SendAsync(request);
-
-		if (response.IsSuccessStatusCode)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}*/
-
-
-
-		//RestSharp way
-		/*var API = new RestClient(connection.get_baseUrl());
-
-		var consulta = new RestRequest("", Method.Post);
-		consulta.AddHeader("Content-Type", "application/json");
-		var body = "{\r\n\n    \"token\":\"" + TK + "\"\r\n\n}";
-		consulta.AddParameter("application/json", body, RestSharp.ParameterType.RequestBody);
-		var resp = await API.ExecuteAsync<AuthenticationUserModel>(consulta);
-
-		if (!string.IsNullOrEmpty(resp.Content))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}*/
-	
-
-
-	
-
-
-
-
-
-
-
- 
 
 
 
