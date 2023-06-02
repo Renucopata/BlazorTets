@@ -47,7 +47,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input">
-						<InputText class="input100" @bind-Value="user.Password" placeholder="Contraseña" />
+						<InputText class="input100" type="password" @bind-Value="user.Password" placeholder="Contraseña" />
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
@@ -57,6 +57,13 @@
 						</button>
 					</div>
 				</EditForm>
+
+				@if (afterCredentialsResponse == "Error de conexion con el servidor" || afterCredentialsResponse == "Credenciales incorrectas")
+				{
+					<div class="error-box">
+						<p>@afterCredentialsResponse</p>
+					</div>
+				}
 			</div>
 		</div>
 	</div>
@@ -74,6 +81,7 @@
 
 @code {
 	AuthenticationUserModel user = new();
+	public string afterCredentialsResponse = "";
 
 	public static ApiConnection connection = new();
 
@@ -93,14 +101,14 @@
 		}
 		else
 		{
-			//handle how to show the error message
+			NavManager.NavigateTo("/");
 		}
 	}
-
+	//-----Token Generation----
 	public TokenRequest tokenGeneration()
 	{
 
-		//-----Token Generation----
+		
 		var token = new JwtSecurityTokenHandler();
 
 		string secretKey = connection.get_secretKey();
@@ -125,7 +133,7 @@
 		return tokenRequest;
 
 	}
-	//----Token Generation---
+	
 
 
 	//---Api Request----
@@ -135,22 +143,25 @@
 
 	public async Task <bool> ApiRequest(TokenRequest tokenRequest )
 	{
-
+		//Sets the ssl certificate
 		HttpClientHandler handler = new HttpClientHandler();
 		handler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 		ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-		ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
+		ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls; 
+
+		//Create the client and the request to the API
 		RestClient _clientRest = new RestClient(handler);
 		RestRequest _requestRest = new RestRequest(connection.get_baseUrl(), Method.Post).AddJsonBody(tokenRequest);
-		RestResponse restRponse = await _clientRest.ExecutePostAsync(_requestRest);
-		var convertedResponse = JsonConvert.SerializeObject(restRponse.Content);
-		var apiResponded = restRponse.IsSuccessStatusCode ? true : false;
+		RestResponse restResponse = await _clientRest.ExecutePostAsync(_requestRest);
+		var convertedResponse = JsonConvert.SerializeObject(restResponse.Content); //Use the response to adapt it to the needed model
+		var apiResponded = restResponse.IsSuccessStatusCode ? true : false;
 
-		if (apiResponded)
+		if (saulIsUp(restResponse))
 		{
 
-			if (restRponse.Content == "[]")
+			if (restResponse.Content == "[]") //If Saul didnt found the user
 			{
+				afterCredentialsResponse = "Credenciales incorrectas";
 				return false;
 			}
 			else
@@ -158,17 +169,17 @@
 				return true;
 			}
 		}
-		else
+		else   //If saul isnt up
 		{
+			afterCredentialsResponse = "Error de conexion con el servidor";
 			return false;
 		}
 
-
-		
-
-
 	}
-	
+	public bool saulIsUp(RestResponse response)   //Check if you have any response from Saul
+	{
+		return response.IsSuccessStatusCode ? true : false;
+	}
 
 		
 

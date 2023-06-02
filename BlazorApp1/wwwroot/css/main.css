@@ -331,6 +331,15 @@ iframe {
   padding-left: 60px;
 }
 
+.error-box {
+	background-color: lightcoral;
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
 
 /*------------------------------------------------------------------
 [ Button ]*/
