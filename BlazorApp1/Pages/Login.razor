@@ -91,6 +91,10 @@
 		{
 			NavManager.NavigateTo("/home");
 		}
+		else
+		{
+			//handle how to show the error message
+		}
 	}
 
 	public TokenRequest tokenGeneration()
@@ -140,21 +144,31 @@
 		RestRequest _requestRest = new RestRequest(connection.get_baseUrl(), Method.Post).AddJsonBody(tokenRequest);
 		RestResponse restRponse = await _clientRest.ExecutePostAsync(_requestRest);
 		var convertedResponse = JsonConvert.SerializeObject(restRponse.Content);
-		
+		var apiResponded = restRponse.IsSuccessStatusCode ? true : false;
 
-
-
-		if (restRponse.Content == "[]")
+		if (apiResponded)
 		{
-			return true;
+
+			if (restRponse.Content == "[]")
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
 		}
 		else
 		{
 			return false;
 		}
 
+
 		
+
+
 	}
+	
 
 		
 
